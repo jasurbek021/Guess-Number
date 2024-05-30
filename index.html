@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="flex items-center justify-center bg-slate-400 h-screen">
+    <div
+      class="flex w-1/2 justify-between flex-col border border-solid shadow-lg shadow-black bg-slate-500 bg-opacity-50 p-5 rounded-2xl border-transparent text-white"
+    >
+      <div class="flex items-center justify-between">
+        <p class="text-3xl cursor-pointer hover:animate-spinOnce">
+          <i id="refresh" class="fa-solid fa-rotate"></i>
+        </p>
+        <p class="">Guess any number between <b>1</b>and <b>20</b></p>
+      </div>
+      <div class="flex justify-center w-full mb-10 mt-10">
+        <div id="img" class="flex justify-center text-7xl">
+          <img
+            src="./question-mark-2994534_1280.webp "
+            alt=""
+            class="w-24 h-24"
+          />
+        </div>
+      </div>
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <input
+            id="input"
+            type="text"
+            class="rounded-full outline-none text-center w-14 h-14 bg-slate-400 text-3xl"
+          />
+          <button
+            id="button"
+            class="border transition-all duration-300 border-solid py-1 px-8 rounded-md text-black bg-slate-400 hover:shadow-md hover:shadow-black active:shadow-sm"
+          >
+            check
+          </button>
+        </div>
+        <div>
+          <p id="text-result">Start Game</p>
+          <p>Attemps: <span id="attemps">5</span></p>
+          <p>Record: <span id="record">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
